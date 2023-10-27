@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp2.ResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="ResultWindow" Height="500" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextAlignment="Center" Grid.Row="0" Grid.Column="0">Just Level</TextBlock>
+        <ListBox Grid.Row="1" Grid.Column="0" x:Name="ListBox_Just"></ListBox>
+        <TextBlock Grid.Column="1" Grid.Row="0" TextAlignment="Center">AVG</TextBlock>
+        <ListBox Grid.Column="1" Grid.Row="1" x:Name="ListBox_JustAVG"></ListBox>
+
+
+        <TextBlock TextAlignment="Center" Grid.Row="2" Grid.Column="0">Norm Level</TextBlock>
+        <ListBox Grid.Row="3" Grid.Column="0" x:Name="ListBox_Norm"></ListBox>
+        <TextBlock Grid.Column="1" Grid.Row="2" TextAlignment="Center">AVG</TextBlock>
+        <ListBox Grid.Column="1" Grid.Row="3" x:Name="ListBox_NormAVG"></ListBox>
+
+        <TextBlock TextAlignment="Center" Grid.Row="4" Grid.Column="0">Hard Level</TextBlock>
+        <ListBox Grid.Row="5" Grid.Column="0" x:Name="ListBox_Difficult"></ListBox>
+        <TextBlock Grid.Column="1" Grid.Row="4" TextAlignment="Center">AVG</TextBlock>
+        <ListBox Grid.Column="1" Grid.Row="5" x:Name="ListBox_DifficultAVG"></ListBox>
+    </Grid>
+</Window>

@@ -1,0 +1,17 @@
+[
+    {
+        "Id": "faa17fb5-2f2a-4050-ae75-67a1a500b0b3",
+        "Email": "Roma@roma.com.ua",
+        "EncryptedPassword": "KkPY7+d3qXfg/QcfNzsbR3yFGzS3sFhNw8c6K1Cx7zXH4j0ZjmD2dFq7zyFbOwa8U6LflwC2q7X/HgHrS3Zd/"
+    },
+    {
+        "Id": "ea189b68-fb61-44d8-8c5e-1a7ecdf90e88",
+        "Email": "Alex@alex.com.ua",
+        "EncryptedPassword": "Ovgmx8/q7Wcz/nkqWeq72zhA2zMxEcKtAcf9dJxHczXHMyqAzzzK1cfV1aHz/xCfV3cA3F4"
+    },
+    {
+        "Id": "ec785bf6-172c-4c28-896c-82e56a346081",
+        "Email": "Sasha@sasha.com.ua",
+        "EncryptedPassword": "1d92bf3s9n7a6f89ac7edc0c35ef03f03c0dfc90304e3dfc02e"
+    }
+]

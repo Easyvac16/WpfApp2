@@ -1,0 +1,15 @@
+"quests": [
+    {
+      "level": "Just",
+      "texts": ["Lorem ipsum dolor sit ame consectetuer adipiscing elit Aenean commodo ligula eget dolor", "Nulla consequat massa quis enim Donec pede justo fringilla vel aliquet nec vulputate ege arcu"]
+    },
+    {
+      "level": "Norm",
+      "texts": ["Nam quam nunc blandit ve luctus pulvinar hendrerit id lorem Maecenas nec odio et ante tincidunt tempus Donec vitae sapien ut libero venenatis faucibus", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo"]
+    },
+    {
+      "level": "Hard",
+      "texts": ["At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident", "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system"]
+    }
+  ]
+}
