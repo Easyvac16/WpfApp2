@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Threading;
 using WpfApp2.Language;
 using WpfApp2.QuestEnv;
+using WpfApp2.UserEnviroment;
 
 namespace WpfApp2
 {
@@ -26,6 +27,7 @@ namespace WpfApp2
         private LanguageSwitcher _languageSwitcher;
         private QuestControler _questControler;
         private UserEnviroment.UserController _userController;
+        UserEnviroment.Result _userResults;
         private int _indexQuest = -1;
         private int _indexCurrentLetter = -1;
         private int _mistakesCount = 0;
@@ -51,6 +53,7 @@ namespace WpfApp2
             _userController = new UserEnviroment.UserController();
             _questControler = new QuestControler();
             _taskTimer = new DispatcherTimer();
+            _userResults = new UserEnviroment.Result();
             _taskTimer.Interval = new TimeSpan(0, 0, 1);
             /*_languageSwitcher = new LanguageSwitcher(Path.GetDirectoryName(
                     Assembly.GetExecutingAssembly().Location
@@ -115,6 +118,10 @@ namespace WpfApp2
             Button_Stop.IsEnabled = false;
             _indexQuest = -1;
             RichTextBox_Answer.Document.Blocks.Clear();
+
+
+
+
 
             _mistakesCount = 0;
             Label_Mistakes.Content = "0";
@@ -240,6 +247,13 @@ namespace WpfApp2
             Label_speed.Content = Strings.Label_speed;
             LabelStatus_Info.Content = Strings.LabelStatus_Info;
             Label_Fails.Content = Strings.Label_Fails;
+        }
+
+        private void Button_Result_Click(object sender, RoutedEventArgs e)
+        {
+            ResultUserWindow resultUserWindow = new ResultUserWindow(_userController);
+            resultUserWindow.Owner = this;
+            resultUserWindow.Show();
         }
     }
 }

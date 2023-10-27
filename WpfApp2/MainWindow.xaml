@@ -47,7 +47,7 @@
                 </WrapPanel>
                 <Button Grid.Row ="1" Grid.Column="2" x:Name="Button_Start" Margin="3" Click="Button_Start_Click">Start</Button>
                 <Button Grid.Row ="1" Grid.Column="3" x:Name="Button_Stop" Margin="3" Click="Button_Stop_Click" IsEnabled="False">Stop</Button>
-                <Button Grid.Row ="0" Grid.Column="3" x:Name="Button_Result" Margin="3">Result</Button>
+                <Button Grid.Row ="0" Grid.Column="3" x:Name="Button_Result" Margin="3" Click="Button_Result_Click">Result</Button>
                 <ComboBox x:Name="ComboBox1" Grid.Row="0" Grid.Column="2" Margin="3" SelectionChanged="ComboBox1_SelectionChanged">
                     <ComboBoxItem Content="Just"/>
                     <ComboBoxItem Content="Norm"/>
