@@ -99,6 +99,9 @@
     <Compile Include="QuestEnv\QuestControler.cs" />
     <Compile Include="QuestEnv\DificultyLevels.cs" />
     <Compile Include="QuestEnv\Quest.cs" />
+    <Compile Include="ResultUserWindow.xaml.cs">
+      <DependentUpon>ResultUserWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResultWindow.xaml.cs">
       <DependentUpon>ResultWindow.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ResultUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResultWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

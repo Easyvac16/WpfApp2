@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -114,7 +115,6 @@ namespace WpfApp2
             Button_Stop.IsEnabled = false;
             _indexQuest = -1;
             RichTextBox_Answer.Document.Blocks.Clear();
-
 
             _mistakesCount = 0;
             Label_Mistakes.Content = "0";
