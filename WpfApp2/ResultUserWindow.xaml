@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="ResultUserWindow" Height="450" Width="800">
+        Title="ResultUserWindow" Height="250" Width="350">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Результати користувача" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
+
+        <StackPanel Grid.Row="1" Margin="20">
+            <TextBlock Text="Помилки:" />
+            <TextBlock x:Name="ErrorsTextBlock" Text="" Margin="0,5"/>
+
+            <TextBlock Text="Швидкість:" Margin="0,10"/>
+            <TextBlock x:Name="SpeedTextBlock" Text="" Margin="0,5"/>
+
+            <TextBlock Text="Час:" Margin="0,10"/>
+            <TextBlock x:Name="TimeTextBlock" Text="" Margin="0,5"/>
+        </StackPanel>
     </Grid>
 </Window>
